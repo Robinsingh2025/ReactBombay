@@ -1,12 +1,12 @@
 import React from 'react';
+import RecipePage from './Components/RecipePage';
 
 // import './App.css';
 
 function App() {
   return (
     <>
-      <h1>Yo</h1>
-      <h2>what good?</h2>
+      <RecipePage />
     </>
   );
 }
