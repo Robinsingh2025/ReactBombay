@@ -1,5 +1,6 @@
 import React from 'react';
 import Instructions from './Instructions';
+// import InstructionSlides from "./InstructionSlides";
 
 function Step({ step, index }) {
   return (
@@ -23,6 +24,7 @@ function Step({ step, index }) {
         </ol>
         <h3>Instructions</h3>
         <Instructions instructions={step.instructions} />
+        {/* <InstructionSlides instructions={step.instructions} /> */}
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import RecipePage from './Components/RecipePage';
 import recipeData from './RecipeData';
 // import './App.css';
 
+// FIXME: Convert this to a function component that uses hooks
 class App extends React.Component {
   constructor(props) {
     super(props);
