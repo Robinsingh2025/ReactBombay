@@ -1,6 +1,6 @@
 const items = [
   {
-    id: 'butter_chicken',
+    id: '1',
     name: 'Butter Chicken',
     steps: [
       {

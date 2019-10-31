@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import RecipePage from './Components/RecipePage';
+import Nav from './Components/Nav';
 import recipeData from './RecipeData';
 // import './App.css';
 
@@ -11,9 +12,10 @@ export default function App() {
   if (!data) {
     return <p>Loading...</p>;
   }
+  console.log(recipeData);
   return (
     <div>
-      Hello
+      <Nav items={data} />
       <RecipePage item={data[0]} />
     </div>
   );
