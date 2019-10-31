@@ -1,28 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import RecipePage from './Components/RecipePage';
 import recipeData from './RecipeData';
 // import './App.css';
 
-// FIXME: Convert this to a function component that uses hooks
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: null
-    };
+export default function App() {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    setData(recipeData);
+  }, []);
+  if (!data) {
+    return <p>Loading...</p>;
   }
-  render() {
-    const { data } = this.state;
-    if (!data) {
-      return <p>Loading...</p>;
-    }
-    return <RecipePage item={data[0]} />;
-  }
-  componentDidMount() {
-    // fetch the recipe data
-    const data = recipeData;
-    this.setState({ data });
-  }
+  return (
+    <div>
+      Hello
+      <RecipePage item={data[0]} />
+    </div>
+  );
 }
-
-export default App;
