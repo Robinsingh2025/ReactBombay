@@ -79,7 +79,12 @@ const items = [
             measurement: 5
           }
         ],
-        instruction: 'Grab 5 tomato sauce cans and put them in the big patela',
+        instructions: [
+          {
+            text: 'Grab 5 tomato sauce cans and put them in the big patela',
+            video: ''
+          }
+        ],
         tools: ['patela', 'half-bucket'],
         images: ['./patela-1.jpg'],
         videos: ['./sauce-1.mp4']
@@ -99,7 +104,12 @@ const items = [
             measurement: '50lbs'
           }
         ],
-        instruction: 'Remove the skin from  50lbs of chicken drumsticks',
+        instructions: [
+          {
+            text: 'Remove the skin from  50lbs of chicken drumsticks',
+            video: ''
+          }
+        ],
         tools: ['weight machine'],
         images: ['./weighing-01.jpg', './skin-removal.jpg'],
         videos: ['./sauce-01.mp4']
@@ -135,8 +145,13 @@ const items = [
             measurement: '1 oz'
           }
         ],
-        instruction:
-          'Mix 4qts of yogurt, 4 cans of mango pulp, 1 gallon of milk, 3 cups of sugar, and 1 oz of orange coloring into the measurement bucket. Check the color and adjust coloring accordingly.',
+        instructions: [
+          {
+            text:
+              'Mix 4qts of yogurt, 4 cans of mango pulp, 1 gallon of milk, 3 cups of sugar, and 1 oz of orange coloring into the measurement bucket. Check the color and adjust coloring accordingly.',
+            video: ''
+          }
+        ],
         tools: ['measurement bucket'],
         images: ['./bucket-01.jpg'],
         videos: ['./mixing-bucket-01.mp4']

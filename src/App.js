@@ -6,6 +6,7 @@ import recipeData from './RecipeData';
 
 export default function App() {
   const [data, setData] = useState(null);
+  const [index, setIndex] = useState(0);
   useEffect(() => {
     setData(recipeData);
   }, []);
@@ -15,8 +16,8 @@ export default function App() {
   console.log(recipeData);
   return (
     <div>
-      <Nav items={data} />
-      <RecipePage item={data[0]} />
+      <Nav items={data} setIndex={setIndex} />
+      <RecipePage item={data[index]} />
     </div>
   );
 }
